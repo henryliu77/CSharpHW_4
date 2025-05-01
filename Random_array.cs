@@ -27,7 +27,7 @@ namespace Random_Array
             }
             catch (Exception ex)
             {
-                MessageBox.Show("±Æ§Çµo¥Í¿ù»~: " + ex.Message);
+                MessageBox.Show("æ’åºç™¼ç”ŸéŒ¯èª¤: " + ex.Message);
             }
         }
 
@@ -51,7 +51,7 @@ namespace Random_Array
             }
             catch (Exception ex) 
             {
-                MessageBox.Show("°õ¦æµo¥Í¿ù»~: " + ex.Message);
+                MessageBox.Show("åŸ·è¡Œç™¼ç”ŸéŒ¯èª¤: " + ex.Message);
             }
         }
     }

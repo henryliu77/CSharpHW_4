@@ -22,27 +22,27 @@ namespace MinMaxApp
                 numbers[4] = int.Parse(txtNumber5.Text);
                 numbers[5] = int.Parse(txtNumber6.Text);
 
-                // ©I¥s¨ç¼Æ­pºâ³Ì¤p­È©M³Ì¤j­È
+                // å‘¼å«å‡½æ•¸è¨ˆç®—æœ€å°å€¼å’Œæœ€å¤§å€¼
                 int minValue = arrMin(numbers);
                 int maxValue = arrMax(numbers);
 
-                // Åã¥Üµ²ªG
-                lblResult1.Text = $"³Ì¤p­È: {minValue}";
-                lblResult2.Text = $"³Ì¤j­È: {maxValue}";
+                // é¡¯ç¤ºçµæœ
+                lblResult1.Text = $"æœ€å°å€¼: {minValue}";
+                lblResult2.Text = $"æœ€å¤§å€¼: {maxValue}";
             }
             catch (Exception ex)
             {
-                MessageBox.Show("½Ğ½T»{¿é¤Jªº­È¬O¦³®Äªº¾ã¼Æ¡C\n" + ex.Message, "¿ù»~", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("è«‹ç¢ºèªè¼¸å…¥çš„å€¼æ˜¯æœ‰æ•ˆçš„æ•´æ•¸ã€‚\n" + ex.Message, "éŒ¯èª¤", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
-        // arrMin ¨ç¼Æ
+        // arrMin å‡½æ•¸
         private int arrMin(int[] arr)
         {
             return arr.Min();
         }
 
-        // arrMax ¨ç¼Æ
+        // arrMax å‡½æ•¸
         private int arrMax(int[] arr)
         {
             return arr.Max();
